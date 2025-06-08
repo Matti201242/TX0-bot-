@@ -40,7 +40,7 @@ def run_php_server(port):
         data["pid"].append(proc_info)
 
 
-    with open("storm-web/Settings.json", "w") as jsonFile:
+    with open("TX0-Bot/Settings.json", "w") as jsonFile:
         json.dump(data, jsonFile)
 
 
