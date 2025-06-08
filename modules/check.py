@@ -16,12 +16,12 @@ def dependency():
 
 
 def check_started():
-    with open("TX0-bot-/Settings.json", "r") as jsonFile:
+    with open("TX0-Bot/Settings.json", "r") as jsonFile:
         data = json.load(jsonFile)
 
     if data["is_start"] == False:
         data["is_start"] = True
-        with open("TX0 bot/Settings.json", "w") as jsonFile:
+        with open("TX0-Bot/Settings.json", "w") as jsonFile:
             json.dump(data, jsonFile)
 
 
